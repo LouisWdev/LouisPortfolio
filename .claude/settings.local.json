@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(cd /c/_MeinStuff/web-apps/red-alert-app && npx shadcn@latest init --defaults -y 2>&1)",
+      "Bash(cd /c/_MeinStuff/web-apps/red-alert-app && npx shadcn@latest add button card badge input textarea -y 2>&1)",
+      "Bash(cd /c/_MeinStuff/web-apps/red-alert-app && npm run build 2>&1)",
+      "Bash(grep:*)"
+    ]
+  }
+}
