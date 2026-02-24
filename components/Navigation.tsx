@@ -32,7 +32,7 @@ export function Navigation() {
             className="neon-text-red text-lg tracking-widest font-bold animate-flicker"
             style={{ fontFamily: "var(--font-share-tech-mono)" }}
           >
-            LOUIS.EXE
+            LOUISW.EXE
           </span>
         </button>
       </div>

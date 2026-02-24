@@ -34,7 +34,7 @@ const PROJECTS: Project[] = [
     id: 2,
     title: "Anime X Manga Site",
     description:
-      "A anime and manga site",
+      "Full-stack anime & manga discovery platform. Browse seasonal releases, track titles, and explore series deep-dives — powered by Next.js 15 with server-side rendering and real-time API integration.",
     tags: [
       { label: "Next.js 15", color: "#00f3ff" },
       { label: "TypeScript", color: "#00f3ff" },
