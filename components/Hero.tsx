@@ -154,12 +154,18 @@ export function Hero() {
 
         {/* CTA Buttons */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <a href="#projects" className="btn-neon-red text-sm tracking-[0.2em]">
+          <button
+            onClick={() => document.getElementById("projects")?.scrollIntoView({ behavior: "smooth" })}
+            className="btn-neon-red text-sm tracking-[0.2em]"
+          >
             &gt; VIEW_PROJECTS
-          </a>
-          <a href="#contact" className="btn-neon-blue text-sm tracking-[0.2em]">
+          </button>
+          <button
+            onClick={() => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })}
+            className="btn-neon-blue text-sm tracking-[0.2em]"
+          >
             &gt; ESTABLISH_LINK
-          </a>
+          </button>
         </div>
       </div>
 

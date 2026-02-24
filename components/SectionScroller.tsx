@@ -4,6 +4,16 @@ import { useEffect, useRef } from "react";
 
 const SECTIONS = ["hero", "about", "projects", "contact"];
 
+const ROUTES: Record<string, string> = {
+  hero:     "/",
+  about:    "/about",
+  projects: "/projects",
+  contact:  "/contact",
+};
+
+const pushRoute = (id: string) =>
+  window.history.replaceState(null, "", ROUTES[id] ?? "/");
+
 export function SectionScroller() {
   const isAnimating = useRef(false);
   const touchStartY = useRef<number | null>(null);
@@ -26,7 +36,7 @@ export function SectionScroller() {
       if (!el) return;
       isAnimating.current = true;
       el.scrollIntoView({ behavior: "smooth" });
-      // release lock after animation completes
+      pushRoute(SECTIONS[clamped]);
       setTimeout(() => {
         isAnimating.current = false;
       }, 900);

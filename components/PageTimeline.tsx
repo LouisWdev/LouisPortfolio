@@ -9,10 +9,18 @@ const SECTIONS = [
   { id: "contact",  label: "CONTACT",  num: "04" },
 ];
 
+const ROUTES: Record<string, string> = {
+  hero:     "/",
+  about:    "/about",
+  projects: "/projects",
+  contact:  "/contact",
+};
+
 export function PageTimeline() {
   const [activeIndex, setActiveIndex] = useState(0);
 
   useEffect(() => {
+    let lastIndex = -1;
     const detect = () => {
       let current = 0;
       SECTIONS.forEach(({ id }, i) => {
@@ -22,6 +30,10 @@ export function PageTimeline() {
         }
       });
       setActiveIndex(current);
+      if (current !== lastIndex) {
+        lastIndex = current;
+        window.history.replaceState(null, "", ROUTES[SECTIONS[current].id] ?? "/");
+      }
     };
 
     detect(); // set on mount immediately
