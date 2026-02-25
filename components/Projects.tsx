@@ -34,12 +34,12 @@ const PROJECTS: Project[] = [
     id: 2,
     title: "Anime X Manga Site",
     description:
-      "Full-stack anime & manga discovery platform. Browse seasonal releases, track titles, and explore series deep-dives — powered by Next.js 15 with server-side rendering and real-time API integration.",
+      "Anime & manga discovery platform built as a React SPA. Browse titles by genre and season, view detailed series info, save favorites, and explore trending releases — powered by the Jikan API with client-side state via Zustand.",
     tags: [
-      { label: "Next.js 15", color: "#00f3ff" },
+      { label: "React 19", color: "#00f3ff" },
       { label: "TypeScript", color: "#00f3ff" },
-      { label: "Tailwind v4", color: "#bf00ff" },
-      { label: "shadcn/ui", color: "#00ff41" },
+      { label: "Vite", color: "#bf00ff" },
+      { label: "Tailwind v3", color: "#00ff41" },
     ],
     status: "DEPLOYED",
     statusColor: "#00ff41",
