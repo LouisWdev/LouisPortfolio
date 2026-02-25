@@ -11,7 +11,7 @@ const shareTechMono = Share_Tech_Mono({
 export const metadata: Metadata = {
   title: "LOUIS.EXE — Full-Stack Developer",
   description:
-    "Portfolio of Louis — Full-Stack Developer, Chaos Space Marine, Diamond-tier Terran. In service of the Omnissiah.",
+    "Portfolio of Louis — Full-Stack Developer, Space Marine, Diamond-tier Terran. In service of the Omnissiah.",
   keywords: [
     "developer",
     "portfolio",
