@@ -1,22 +1,21 @@
 import { Navigation } from "@/components/Navigation";
+import { BootScreen } from "@/components/BootScreen";
 import { Hero } from "@/components/Hero";
 import { About } from "@/components/About";
 import { Projects } from "@/components/Projects";
 import { Contact } from "@/components/Contact";
 import { ChatWidget } from "@/components/ChatWidget";
+import { PageTimeline } from "@/components/PageTimeline";
 import { Footer } from "@/components/Footer";
-import { ScrollProgress } from "@/components/ScrollProgress";
 import { ScrollReveal } from "@/components/ScrollReveal";
 import { SectionDivider } from "@/components/SectionDivider";
 import { SectionScroller } from "@/components/SectionScroller";
-import { PageTimeline } from "@/components/PageTimeline";
 
 export default function Home() {
   return (
     <>
       <SectionScroller />
-      <ScrollProgress />
-      <Navigation />
+<Navigation />
       <main>
         <Hero />
         <SectionDivider />
@@ -37,6 +36,7 @@ export default function Home() {
       </ScrollReveal>
       <PageTimeline />
       <ChatWidget />
+      <BootScreen />
     </>
   );
 }
