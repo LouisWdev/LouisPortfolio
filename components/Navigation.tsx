@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import { Terminal } from "lucide-react";
 
+
 export function Navigation() {
   const [scrolled, setScrolled] = useState(false);
 
@@ -25,7 +26,7 @@ export function Navigation() {
           onClick={() =>
             document.getElementById("hero")?.scrollIntoView({ behavior: "smooth" })
           }
-          className="flex items-center gap-2 cursor-pointer"
+className="flex items-center gap-2 cursor-pointer"
         >
           <Terminal size={18} className="text-[#ff0033]" />
           <span

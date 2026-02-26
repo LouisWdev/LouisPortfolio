@@ -40,7 +40,7 @@ export function Contact() {
   return (
     <section
       id="contact"
-      className="py-24 px-4"
+      className="pt-24 pb-72 px-4"
       style={{ background: "#05080f" }}
     >
       <div className="max-w-2xl mx-auto">

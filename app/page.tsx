@@ -7,7 +7,7 @@ import { Contact } from "@/components/Contact";
 import { ChatWidget } from "@/components/ChatWidget";
 import { PageTimeline } from "@/components/PageTimeline";
 import { Footer } from "@/components/Footer";
-import { ScrollReveal } from "@/components/ScrollReveal";
+import { GlitchReveal } from "@/components/GlitchReveal";
 import { SectionDivider } from "@/components/SectionDivider";
 import { SectionScroller } from "@/components/SectionScroller";
 
@@ -19,21 +19,19 @@ export default function Home() {
       <main>
         <Hero />
         <SectionDivider />
-        <ScrollReveal direction="left">
+        <GlitchReveal>
           <About />
-        </ScrollReveal>
+        </GlitchReveal>
         <SectionDivider />
-        <ScrollReveal direction="up" delay={100}>
+        <GlitchReveal delay={80}>
           <Projects />
-        </ScrollReveal>
+        </GlitchReveal>
         <SectionDivider />
-        <ScrollReveal direction="right" delay={100}>
+        <GlitchReveal delay={80}>
           <Contact />
-        </ScrollReveal>
+        </GlitchReveal>
       </main>
-      <ScrollReveal direction="up" delay={50}>
-        <Footer />
-      </ScrollReveal>
+      <Footer />
       <PageTimeline />
       <ChatWidget />
       <BootScreen />
