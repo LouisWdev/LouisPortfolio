@@ -44,7 +44,7 @@ const PROJECTS: Project[] = [
     status: "DEPLOYED",
     statusColor: "#00ff41",
     github: "#",
-    live: "#",
+    live: "https://anime-webapp-omega.vercel.app",
   },
   {
     id: 3,
