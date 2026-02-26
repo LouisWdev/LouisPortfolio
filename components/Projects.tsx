@@ -27,7 +27,7 @@ const PROJECTS: Project[] = [
     ],
     status: "LIVE",
     statusColor: "#00ff41",
-    github: "#",
+    github: "https://github.com/LouisWdev",
     live: "#",
   },
   {
@@ -43,7 +43,7 @@ const PROJECTS: Project[] = [
     ],
     status: "DEPLOYED",
     statusColor: "#00ff41",
-    github: "#",
+    github: "https://github.com/LouisWdev",
     live: "https://anime-webapp-omega.vercel.app",
   },
   {
@@ -59,7 +59,7 @@ const PROJECTS: Project[] = [
     ],
     status: "DEPLOYED",
     statusColor: "#00ff41",
-    github: "#",
+    github: "https://github.com/LouisWdev",
     live: "https://yunastores.com/",
   },
 ];
@@ -120,6 +120,8 @@ function ProjectCard({ project }: { project: Project }) {
         {project.github && (
           <a
             href={project.github}
+            target="_blank"
+            rel="noopener noreferrer"
             className="flex items-center gap-1.5 text-xs tracking-wider transition-all duration-200"
             style={{ color: "#556677" }}
             onMouseEnter={(e) => {
