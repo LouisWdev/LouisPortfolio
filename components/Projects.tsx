@@ -46,6 +46,22 @@ const PROJECTS: Project[] = [
     github: "#",
     live: "#",
   },
+  {
+    id: 3,
+    title: "YUNA-STORE.EXE",
+    description:
+      "Full-stack e-commerce platform with product browsing, cart management, and Stripe-powered checkout. Built with React 19 and PocketBase as the backend, featuring real-time inventory and secure payment flows.",
+    tags: [
+      { label: "React 19", color: "#00f3ff" },
+      { label: "TypeScript", color: "#00f3ff" },
+      { label: "PocketBase", color: "#bf00ff" },
+      { label: "Stripe", color: "#00ff41" },
+    ],
+    status: "DEPLOYED",
+    statusColor: "#00ff41",
+    github: "#",
+    live: "https://yunastores.com/",
+  },
 ];
 
 function ProjectCard({ project }: { project: Project }) {
