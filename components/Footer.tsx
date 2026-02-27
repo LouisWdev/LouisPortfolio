@@ -72,9 +72,9 @@ export function Footer() {
           {/* Social links */}
           <div className="flex items-center gap-4">
             {[
-              { icon: Github, href: "#", label: "GitHub" },
+              { icon: Github, href: "https://github.com/LouisWdev", label: "GitHub" },
               { icon: Twitter, href: "#", label: "Twitter" },
-              { icon: Linkedin, href: "#", label: "LinkedIn" },
+              { icon: Linkedin, href: "https://www.linkedin.com/in/louis-wackenier-37463b255/", label: "LinkedIn" },
             ].map(({ icon: Icon, href, label }) => (
               <a
                 key={label}
