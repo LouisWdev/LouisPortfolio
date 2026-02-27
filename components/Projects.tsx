@@ -62,6 +62,22 @@ const PROJECTS: Project[] = [
     github: "https://github.com/LouisWdev",
     live: "https://yunastores.com/",
   },
+  {
+    id: 4,
+    title: "VAPOR TRAVEL.EXE",
+    description:
+      "Retro-futuristic travel portal built with React Three Fiber. Features a full-screen animated 3D hero scene (scrolling vaporwave grid, neon palm trees, orbiting ringed sun), eight destination cards each with an embedded live 3D preview canvas, a navigable virtual tour with clickable hotspots, and a procedural Web Audio API synth pad — no external audio files. Includes a hidden Vapor Mode easter egg (hold V).",
+    tags: [
+      { label: "React 18", color: "#00f3ff" },
+      { label: "Three.js / R3F", color: "#bf00ff" },
+      { label: "Framer Motion", color: "#00f3ff" },
+      { label: "Web Audio API", color: "#00ff41" },
+    ],
+    status: "DEPLOYED",
+    statusColor: "#00ff41",
+    github: "https://github.com/LouisWdev",
+    live: "https://vaporwave-travel-app.vercel.app/",
+  },
 ];
 
 function ProjectCard({ project }: { project: Project }) {
